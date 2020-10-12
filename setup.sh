@@ -28,8 +28,8 @@ fi
 # Update, install the necessary plugins
 
 apt-get update
-apt-get upgrade -y
-apt-get install -y bluez-tools pulseaudio-module-bluetooth pulseaudio libnss-myhostname crudini
+apt-get upgrade -y --force-yes
+apt-get install -y --force-yes bluez-tools pulseaudio-module-bluetooth python-gi pulseaudio libnss-myhostname crudini
 
 # See git log for details
 cp -f bt-agent.bin /usr/bin/bt-agent
